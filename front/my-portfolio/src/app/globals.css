@@ -1,0 +1,63 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタム変数 */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --font-noto-sans: 'Noto Sans', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #05040c;
+    --foreground: #b0d8f0;
+    --font-noto-sans: 'Noto Sans', sans-serif;
+  }
+}
+
+body {
+  font-family: var(--font-noto-sans), sans-serif;
+  @apply bg-[var(--background)] text-[var(--foreground)];
+}
+
+.text-shadow-blue {
+  text-shadow: 0px 0px 24px rgba(122, 213, 255, 0.9);
+}
+.text-shadow-blue-lg {
+  text-shadow: 0px 0px 30px rgba(81, 247, 253, 0.9);
+}
+.shadow-blue-glow {
+  filter: drop-shadow(0 0 6px rgba(122, 213, 255, 0.8));
+}
+.glow-strong {
+  filter: drop-shadow(0 0 4px rgba(122, 213, 255, 0.9))
+          drop-shadow(0 0 8px rgba(122, 213, 255, 0.8))
+          drop-shadow(0 0 12px rgba(122, 213, 255, 0.6));
+}
+.glow-strong-sm {
+  filter: drop-shadow(0 0 3px rgba(122, 213, 255, 0.8))
+          drop-shadow(0 0 02px rgba(122, 213, 255, 0.6));
+}
+.glow-strong-xs {
+  filter: drop-shadow(0 0 3px rgba(122, 213, 255, 0.8));
+}
+.bg-blur {
+  backdrop-filter: blur(2px);
+}
+/* dev */
+.bbb{
+  border-style: dashed;
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.bb{
+  border-style: dashed;
+  border-color: #ffffff;
+  border-width: 1px;
+}
