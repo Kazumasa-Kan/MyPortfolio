@@ -1,6 +1,6 @@
 import { NextConfig } from "next"
 
-const repoName = 'MyPortfolio'; //GitHubのリポジトリ名
+
 const nextConfig: NextConfig = {
   // 🚀 Next.js の設定
   // reactStrictMode: true,
@@ -25,10 +25,6 @@ const nextConfig: NextConfig = {
     return config;
   },
 
-  // for GitHub Pages
-  output: 'export', // ← 静的HTMLに変換
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
