@@ -27,8 +27,8 @@ const nextConfig: NextConfig = {
 
   // for GitHub Pages
   output: 'export', // ← 静的HTMLに変換
-  basePath: '/' + repoName,
-  assetPrefix: '/' + repoName + '/',
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
