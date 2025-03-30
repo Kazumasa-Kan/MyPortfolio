@@ -1,3 +1,4 @@
+# ./.gitignore
 # Created by https://www.toptal.com/developers/gitignore/api/git,web,python,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=git,web,python,node
 
@@ -173,7 +174,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -225,8 +225,6 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-docs/_build/
 
 # PyBuilder
 .pybuilder/
@@ -329,10 +327,7 @@ pyrightconfig.json
 *.asp
 *.cer
 *.csr
-*.css
 *.htm
-*.html
-*.js
 *.jsp
 *.php
 *.rss
