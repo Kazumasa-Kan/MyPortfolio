@@ -1,103 +1,368 @@
+// page.tsx
+'use client';
+import { useEffect } from "react";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+export default function Home() {
+
+  useEffect(() => {
+    const cv_hp_bar = document.getElementById("hp-bar") as HTMLCanvasElement;
+    if (cv_hp_bar) {
+      const ctx = cv_hp_bar.getContext("2d");
+      if (ctx) {
+        cv_hp_bar.width = 100;
+        cv_hp_bar.height = 5;
+
+        ctx.beginPath();
+        ctx.moveTo(0, 3);
+        ctx.lineTo(100, 3);
+        ctx.strokeStyle = "rgba(122, 213, 255, 0.8)";
+        ctx.lineWidth = 5;
+        ctx.stroke();
+      }
+    } else {
+      console.log('canvasを取得できません');
+    }
+  }, []);
+
+    return (
+      <div
+        className="
+          text-white text-center
+          text-shadow-blue-lg
+        "
+      >
+{/* STATUS */}
+        <div className="flex-none size-4">{/* empty */}</div>
+        <div className="
+          grid grid-flow-col grid-cols-8 gap-4
+        "
+        >
+          <div
+            className="
+              col-start-3 col-span-4
+              row-span-1
+              border border-white
+              text-4xl
+              p-4
+              text-shadow-blue-lg
+              shadow-[-4px_4px_66px_5px_rgba(59,_130,_246,_0.15)]
+              bg-[#00102040]
+            "
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <span className="glow-strong-sm">STATUS</span>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+{/* Level */}
+        <div className="flex-none size-4">{/* empty */}</div>
+        <div className="
+          grid grid-cols-16 grid-rows-2
+        "
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <div
+            className="
+              col-start-7 col-span-2
+              row-span-1 self-end
+            "
+          >
+            <span
+              className="
+                text-6xl font-bold
+                inline-block align-bottom
+                glow-strong-xs
+              "
+              >
+                100
+              </span>
+          </div>
+          <div
+            className="
+              col-start-7 col-span-2
+              row-start-2 row-span-1
+              inline-block align-top
+            "
+          >
+            <p className="text-lg glow-strong-sm">LEVEL</p>
+          </div>
+          <div
+            className="
+              col-start-9 col-span-1
+              row-start-1 row-span-1
+              text-lg text-right
+              pt-10
+            "
+          >
+            <span className="text-sm glow-strong-xs">JOB:</span>
+          </div>
+          <div
+            className="
+              col-start-10 col-span-6
+              row-start-1 row-span-1
+              text-lg text-right
+              pt-10
+            "
+          >
+            <p className="
+              text-lg text-left align-top
+              font-bold
+              glow-strong-sm
+              pl-1
+              "
+            >
+                None
+            </p>
+          </div>
+          <div
+            className="
+              col-start-9 col-span-1
+              row-start-2 row-span-1
+              text-lg text-right
+              glow-strong-xs
+            "
+          >
+            <span className="text-sm">TITLE:</span>
+          </div>
+          <div
+            className="
+              col-start-10 col-span-6
+              row-start-2 row-span-1
+              text-lg text-right pl-1
+            "
+          >
+          <p className="
+            text-lg text-left align-top
+            font-bold
+            glow-strong-xs
+            "
+          >
+              None
+          </p>
+          </div>
+        </div>
+
+{/* HP MP FATIGUE */}
+        <div className="flex-none size-4">{/* empty */}</div>
+        <div className="
+          grid grid-flow-col grid-cols-16
+        "
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <div
+            className="
+              col-start-2 col-span-14
+              border
+              bg-[#00102030]
+            "
+          >
+            <div className="
+              grid grid-flow-col grid-cols-16 grid-rows-3
+            "
+            >
+              {/* HP */}
+              <div
+                className="
+                  col-start-2 col-span-1
+                  row-start-2 pl-2
+                "
+              >
+                <div className="
+                  flex justify-center
+                  bbb
+                  ">
+                  <Image
+                    className="
+                      min-w-[25px] min-h-[25px]
+                      glow-strong
+                      "
+                    src="/HP.svg"
+                    width={20}
+                    height={20}
+                    alt="HP"
+                    priority />
+                </div>
+                <div className="
+                  glow-strong-sm
+                  bbb">
+                  <p className="">HP</p>
+                </div>
+              </div>
+              <div
+                className="
+                  col-start-3 col-span-4
+                  row-start-2 row-span-1
+                  bbb
+                "
+              >
+                <div className="
+                  grid grid-flow-col grid-cols-1 grid-rows-2 gap-1
+                "
+                >
+                  <div
+                    className="
+                      row-start-1 row-span-1
+                      border rounded-xl mt-2
+                      w-full
+                    "
+                  >
+                    <canvas id="hp-bar" width={100} height={5}></canvas>
+                  </div>
+                  <div
+                    className="
+                      row-start-2 row-span-1
+                      text-[10px] text-end
+                      glow-strong-xs
+                    "
+                  >
+                    220/220
+                  </div>
+                </div>
+              </div>
+
+              {/* MP */}
+              <div
+                className="
+                  col-start-7 col-span-1
+                  row-start-2 pl-2
+                "
+              >
+                <div className="
+                  flex justify-center">
+                  <Image
+                    className="
+                      min-w-[25px] min-h-[25px]
+                      glow-strong
+                    "
+                    src="/MP.svg"
+                    width={25}
+                    height={25}
+                    alt="MP"
+                    priority />
+                </div>
+                <div>
+                  <p className="
+                    glow-strong-sm
+                  ">MP</p>
+                </div>
+              </div>
+              <div
+                className="
+                  col-start-8 col-span-4
+                  row-start-2 row-span-1
+                "
+              >
+                <div className="
+                  grid grid-flow-col grid-cols-1 grid-rows-2 gap-1
+                "
+                >
+                  <div
+                    className="
+                      row-start-1 row-span-1
+                      border rounded-xl mt-2
+                      w-full
+                    "
+                  >
+                    <canvas id="hp-bar" width={100} height={5}></canvas>
+                  </div>
+                  <div
+                    className="
+                      row-start-2 row-span-1
+                      text-[10px] text-end
+                      glow-strong-xs
+                    "
+                  >
+                    22/22
+                  </div>
+                </div>
+              </div>
+
+              {/* Fatigue */}
+              <div
+                className="
+                  col-start-13 col-span-2
+                  row-start-2 pl-2
+                  bbb
+                "
+              >
+                <div
+                  className="
+                    grid grid-flow-col grid-cols-2 grid-rows-1
+                  "
+                >
+                  <div className="
+                    col-start-1 col-span-1
+                    row-start-1 row-span-1
+                    pl-2
+                    bbb
+                    "
+                  >
+                    <div>
+                      <Image
+                        className="
+                          min-w-[40px] min-h-[40px]
+                          glow-strong
+                        "
+                        src="/Fatigue/Fatigue_1.svg"
+                        width={25}
+                        height={25}
+                        alt="MP"
+                        priority />
+                      </div>
+                      <div
+                        className="
+                        "
+                      >
+                        <span className="
+                            text-sm mr-2
+                            glow-strong-xs
+                          "
+                        >FATIGUE: </span>
+                      </div>
+                  </div>
+                  <div
+                    className="
+                      col-start-2 col-span-1
+                      row-start-1 row-span-1
+                      place-self-end place-left
+                      bbb
+                    "
+                  ><span className="
+                    text-3xl pl-1
+                    glow-strong
+                    ">3</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+{/* STR...*/}
+        <div className="flex-none size-9">{/* empty */}</div>
+        <div className="
+          grid grid-flow-col grid-rows-3 bbb
+        "
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+          <div
+            className="
+              text-shadow-lg
+            "
+          >
+            STATUS
+          </div>
+        </div>
+
+        <footer
+        className="
+          row-start-3
+          flex
+          gap-[24px]
+          flex-wrap
+          items-center
+          justify-center
+        "
+      >
       </footer>
-    </div>
-  );
-}
+      </div>
+    );
+  }
