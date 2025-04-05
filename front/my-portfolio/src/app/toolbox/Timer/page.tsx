@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div
       className="
+        min-h-screen
         text-white text-center
         text-shadow-blue-lg
       "
@@ -20,17 +21,6 @@ export default function Home() {
         <Timer />
       </main>
 
-      <footer
-        className="
-          row-start-3
-          flex
-          gap-[24px]
-          flex-wrap
-          items-center
-          justify-center
-        "
-      >
-      </footer>
     </div>
   );
 }

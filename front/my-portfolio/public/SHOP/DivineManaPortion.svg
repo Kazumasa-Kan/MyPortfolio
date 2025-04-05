@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Potion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 266">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e1eef3;
+        stroke-miterlimit: 10;
+        stroke-width: 11px;
+      }
+
+      .cls-2 {
+        fill: #e1eef3;
+      }
+    </style>
+  </defs>
+  <polygon id="pod" class="cls-2" points="162.75 50.73 156.64 74.78 132.2 74.41 132.2 31.64 149.76 31.64 146.71 50.73 162.75 50.73"/>
+  <polygon id="pod-2" data-name="pod" class="cls-2" points="101.65 50.73 107.76 74.78 132.2 74.41 132.2 31.64 114.63 31.64 117.69 50.73 101.65 50.73"/>
+  <path id="ManaPortionOutline" class="cls-1" d="M144.46,74.41v23.43l48.34,17.67s-14.53,112.54-14.53,118.85h-45.27"/>
+  <path id="ManaPortionOutline-2" data-name="ManaPortionOutline" class="cls-1" d="M123.15,74.41c0,8.45,0,23.43,0,23.43l-48.34,17.67s14.53,112.54,14.53,118.85c12.18,0,45.27,0,45.27,0"/>
+  <path id="LegendaryHealingPotion" class="cls-2" d="M134.6,108.39s-20.89,6.7-44.34,15.95c2.64,26.09,13.34,98.01,13.34,98.01h64.73l11.72-96.13-45.45-17.83Z"/>
+</svg>

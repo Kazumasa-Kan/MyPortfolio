@@ -1,6 +1,6 @@
 
 // import Image from "next/image";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,21 +22,26 @@ export default function Home() {
           sm:items-start
         "
       >
-        {/* ITEMS */}
-ne
+
+
+        <Link
+            href ='/toolbox/timer'
+            className='
+                items-center
+                text-2xl text-brand
+                glow-strong
+            '
+        >
+           Timer
+        </Link>
       </main>
 
-      <footer
-        className="
-          row-start-3
-          flex
-          gap-[24px]
-          flex-wrap
-          items-center
-          justify-center
-        "
-      >
-      </footer>
+    <div
+      className="
+      "
+    >
+
+    </div>
     </div>
   );
 }
