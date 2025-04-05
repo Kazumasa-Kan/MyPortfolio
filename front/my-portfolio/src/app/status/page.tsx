@@ -368,7 +368,7 @@ export default function Home() {
                     glow-strong-sm
                     place-self-end
                   "
-                  src="/status/str3.svg"
+                  src="/status/STR.svg"
                   width={20}
                   height={20}
                   alt="str"
@@ -410,7 +410,7 @@ export default function Home() {
                     glow-strong-sm
                     place-self-end
                   "
-                  src="/status/vit2.svg"
+                  src="/status/VIT.svg"
                   width={20}
                   height={20}
                   alt="vit"
@@ -452,7 +452,7 @@ export default function Home() {
                     glow-strong-sm
                     place-self-end
                   "
-                  src="/status/agi2.svg"
+                  src="/status/AGI.svg"
                   width={20}
                   height={20}
                   alt="agi"
@@ -494,7 +494,7 @@ export default function Home() {
                     glow-strong-sm
                     place-self-end
                   "
-                  src="/status/int2.svg"
+                  src="/status/INT.svg"
                   width={20}
                   height={20}
                   alt="int"
@@ -536,7 +536,7 @@ export default function Home() {
                     glow-strong-sm
                     place-self-end
                   "
-                  src="/status/per2.svg"
+                  src="/status/PER.svg"
                   width={20}
                   height={20}
                   alt="per"
