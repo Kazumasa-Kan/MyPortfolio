@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="CheckBox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 266">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #e0ecf1;
+        stroke-width: 16px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #e1eef3;
+        stroke-width: 12px;
+      }
+
+      .cls-3 {
+        fill: #e0ecf1;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M243,91v127.53c0,13.52-10.96,24.47-24.47,24.47H47.47c-13.52,0-24.47-10.96-24.47-24.47V47.47c0-13.52,10.96-24.47,24.47-24.47h127.53"/>
+  <circle class="cls-3" cx="243" cy="91" r="6"/>
+  <circle class="cls-3" cx="175" cy="23" r="6"/>
+  <polyline class="cls-1" points="243 37 137 173 50 115"/>
+  <circle class="cls-3" cx="50" cy="115" r="8"/>
+  <circle class="cls-3" cx="243" cy="37" r="8"/>
+</svg>

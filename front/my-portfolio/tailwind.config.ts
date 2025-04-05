@@ -11,8 +11,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '375px',
+      },
       fontFamily: {
-        noto: ['var(--font-noto-sans)', 'sans-serif'],
+        klee: ["var(--font-klee-one)", "sans-serif"],
       },
       textShadow: {
         sm: '1px 1px 2px rgba(195, 238, 255, 0.5)',
@@ -23,14 +26,6 @@ const config: Config = {
   },
   plugins: [
     plugin(function ({addUtilities  }) {
-      // matchUtilities(
-      //   {
-      //     'text-shadow': value => ({
-      //       textShadow: value,
-      //     }),
-      //   },
-      //   { values: theme('textShadow') }
-      // ),
       addUtilities({
         '.text-shadow-blue': {
           textShadow: '0px 0px 24px rgba(122, 213, 255, 0.6)',

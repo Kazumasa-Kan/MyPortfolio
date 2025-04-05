@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Potion" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 266">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e1eef3;
+        stroke-miterlimit: 10;
+        stroke-width: 11px;
+      }
+
+      .cls-2 {
+        fill: #e1eef3;
+      }
+    </style>
+  </defs>
+  <path id="HealingPortionOutline" class="cls-1" d="M143.65,74.41v23.43s41.66,6.67,48.34,17.67c15.54,25.58-14.53,112.54-14.53,118.85h-45.27"/>
+  <path id="HealingPortionOutline-2" data-name="HealingPortionOutline" class="cls-1" d="M122.35,74.41c0,8.45,0,23.43,0,23.43,0,0-41.66,6.67-48.34,17.67-15.54,25.58,14.53,112.54,14.53,118.85,12.18,0,45.27,0,45.27,0"/>
+  <polygon id="pod" class="cls-2" points="162.75 50.73 156.64 74.78 132.2 74.41 132.2 31.64 149.76 31.64 146.71 50.73 162.75 50.73"/>
+  <polygon id="pod-2" data-name="pod" class="cls-2" points="101.65 50.73 107.76 74.78 132.2 74.41 132.2 31.64 114.63 31.64 117.69 50.73 101.65 50.73"/>
+  <path id="DivineHealingPotion" class="cls-2" d="M134.66,108.59c-12.55,0-52.69,6.89-52.69,20.27,0,50.91,20.15,93.49,20.15,93.49h64.73s21.91-56.88,18.44-92.6c1.76-15.15-39.06-21.14-50.63-21.15Z"/>
+</svg>

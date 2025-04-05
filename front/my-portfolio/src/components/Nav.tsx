@@ -9,7 +9,9 @@ function MyNav() {
                 flex
                 justify-between
                 bg-blur
-                bg-[#dfefff16]
+                bg-[#ffffff05]
+                border-b border-double border-[#88aaffff]
+                shadow-md shadow-cyan-500/50
             '
         >
                 <Link
@@ -43,7 +45,7 @@ function MyNav() {
                         "
                     >Toolbox</Link>
                     <Link
-                        href='/toolbox/Timer'
+                        href='/toolbox/timer'
                         className="
                             pt-4
                         "
