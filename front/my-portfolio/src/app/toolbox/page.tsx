@@ -35,13 +35,6 @@ export default function Home() {
            Timer
         </Link>
       </main>
-
-    <div
-      className="
-      "
-    >
-
-    </div>
     </div>
   );
 }
