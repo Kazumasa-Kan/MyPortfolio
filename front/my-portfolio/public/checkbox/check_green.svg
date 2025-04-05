@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="CheckBox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 266">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #27993a;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #20a139;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-2" points="243 37 137 173 50 115"/>
+  <circle class="cls-1" cx="50" cy="115" r="8"/>
+  <circle class="cls-1" cx="243" cy="37" r="8"/>
+</svg>

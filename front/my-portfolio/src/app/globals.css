@@ -27,10 +27,26 @@ body {
 }
 
 .text-shadow-blue {
-  text-shadow: 0px 0px 24px rgba(122, 213, 255, 0.9);
+  text-shadow: 0px 0px 10px rgba(81, 247, 253, 0.9),
+               0px 0px 20px rgba(81, 247, 253, 0.3);
 }
-.text-shadow-blue-lg {
-  text-shadow: 0px 0px 30px rgba(81, 247, 253, 0.9);
+.text-shadow-blue-sm {
+  text-shadow: 0px 0px 10px rgba(81, 247, 253, 0.6),
+               0px 0px 20px rgba(81, 247, 253, 0.3);
+}
+.text-shadow-green {
+  text-shadow: 0px 0px 10px rgba(56, 252, 56, 0.9),
+               0px 0px 20px rgba(56, 252, 56, 0.9);
+}
+.text-shadow-red {
+  text-shadow: 0px 0px 30px rgba(233, 81, 81, 0.9),
+               0px 0px 20px rgba(233, 81, 81, 0.9);
+}
+.shadow-red-glow {
+  filter: drop-shadow(0 0 6px rgba(255, 122, 122, 0.8));
+}
+.shadow-green-glow {
+  filter: drop-shadow(0 0 6px rgba(122, 255, 133, 0.8));
 }
 .shadow-blue-glow {
   filter: drop-shadow(0 0 6px rgba(122, 213, 255, 0.8));
@@ -41,8 +57,8 @@ body {
           drop-shadow(0 0 12px rgba(122, 213, 255, 0.6));
 }
 .glow-strong-sm {
-  filter: drop-shadow(0 0 3px rgba(122, 213, 255, 0.8))
-          drop-shadow(0 0 02px rgba(122, 213, 255, 0.6));
+  filter: drop-shadow(0 0 10px rgba(122, 213, 255, 0.8))
+          drop-shadow(0 0 7px rgba(122, 213, 255, 0.4));
 }
 .glow-strong-xs {
   filter: drop-shadow(0 0 3px rgba(122, 213, 255, 0.8));
@@ -50,6 +66,26 @@ body {
 .bg-blur {
   backdrop-filter: blur(2px);
 }
+
+
+@keyframes flash-press {
+  0% {
+    background-color: white;
+    box-shadow: 0 0 0px white;
+  }
+  50% {
+    background-color: #fff;
+    box-shadow: 0 0 20px white;
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 0px transparent;
+  }
+}
+.btn-animate-press {
+  animation: flash-press 0.6s ease;
+}
+
 /* dev */
 .bbb{
   border-style: dashed;
